@@ -1,0 +1,79 @@
+/* Custom Styles over Tailwind */
+.prose-brand a {
+    color: #06b6d4;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.prose-brand a:hover {
+    color: #3b82f6;
+    text-decoration: underline;
+}
+.prose-brand h2 {
+    color: #e2e8f0;
+    border-bottom: 1px solid #334155;
+    padding-bottom: 0.5rem;
+    margin-top: 2.5rem;
+}
+.prose-brand h3 {
+    color: #cbd5e1;
+    margin-top: 2rem;
+}
+.prose-brand blockquote {
+    border-left-color: #06b6d4;
+    background: rgba(15, 23, 42, 0.5);
+    padding: 1rem;
+    border-radius: 0 0.5rem 0.5rem 0;
+    font-style: normal;
+    color: #94a3b8;
+}
+.prose-brand table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.prose-brand th {
+    background-color: #1e293b;
+    color: #e2e8f0;
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 2px solid #3b82f6;
+}
+.prose-brand td {
+    padding: 0.75rem;
+    border-bottom: 1px solid #334155;
+    color: #cbd5e1;
+}
+.prose-brand tr:hover td {
+    background-color: rgba(30, 41, 59, 0.5);
+}
+
+/* Glassmorphism utility */
+.glass {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0f172a;
+}
+::-webkit-scrollbar-thumb {
+    background: #334155;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #06b6d4;
+}
+
+/* Active Nav Link */
+.nav-link.active {
+    background-color: rgba(59, 130, 246, 0.1);
+    color: #06b6d4;
+    border-right: 3px solid #06b6d4;
+}
