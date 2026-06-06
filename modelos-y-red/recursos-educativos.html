@@ -7,7 +7,7 @@ subtitle: Inventario y caracterización para evaluación
 <div class="space-y-10">
     <div class="card p-8 md:p-10">
         <p class="mb-0 text-brand-body leading-relaxed text-lg">
-            A continuación se presentan las fichas técnicas de los dos Recursos Educativos Digitales (RED) seleccionados. Ambos se enfocan en la enseñanza de la cadena de valor del gas natural y son el objeto de aplicación de los instrumentos de evaluación. En la asignatura de Procesos Industriales I, el nivel de interactividad de estas herramientas es determinante para la comprensión de variables termodinámicas complejas.
+            A continuación se presentan las fichas técnicas de los Recursos Educativos Digitales (RED) evaluados. Los RED 1 y 2 son simuladores enfocados en la enseñanza de la cadena de valor del gas natural en Procesos Industriales I, donde el nivel de interactividad es determinante para comprender variables termodinámicas complejas. El RED 3 es un caso adicional de autoría propia —un CMMS educativo— que permite poner a prueba la transferibilidad del modelo rediseñado a otro contexto de la Ingeniería de Producción.
         </p>
     </div>
 
@@ -94,6 +94,53 @@ subtitle: Inventario y caracterización para evaluación
 
         <div class="p-6 border-t border-brand-line bg-brand-canvas/40">
             <img src="{{ '/assets/img/red2.jpg' | relative_url }}" alt="Captura de pantalla del RED 2" class="w-full rounded-lg border border-brand-line" onerror="this.outerHTML='<div class=\'aspect-video bg-brand-canvas rounded-lg flex flex-col items-center justify-center text-brand-muted text-sm border border-brand-line p-4 text-center\'><p>Guarda tu captura en <b>assets/img/red2.jpg</b> para que aparezca aquí.</p></div>'">
+        </div>
+    </section>
+
+    <!-- RED 3 — caso adicional -->
+    <section class="card overflow-hidden p-0">
+        <div class="bg-brand-canvas p-6 md:p-7 border-b border-brand-line">
+            <div class="flex flex-wrap items-center gap-2">
+                <span class="font-mono text-xs px-2.5 py-1 rounded-full bg-brand-gas/10 text-brand-gas border border-brand-gas/25">RED 3</span>
+                <span class="font-mono text-xs px-2.5 py-1 rounded-full bg-brand-canvas text-brand-muted border border-brand-line">Caso adicional · autoría propia</span>
+            </div>
+            <h2 class="font-display text-2xl font-semibold text-brand-ink mt-3 mb-1">MaintPro CMMS — Sistema de Gestión de Mantenimiento</h2>
+            <p class="text-brand-accent text-sm font-mono">Tipo: Aplicación web educativa / Simulador de gestión (CMMS)</p>
+        </div>
+
+        <div class="grid md:grid-cols-2">
+            <div class="p-6 md:p-8 space-y-4">
+                <div><span class="eyebrow block">Área de conocimiento</span> <span class="text-brand-body">Ingeniería de Producción / Gestión del Mantenimiento Industrial</span></div>
+                <div><span class="eyebrow block">Nivel de aplicación</span> <span class="text-brand-body">Educación Superior — asignatura Programación y Control del Mantenimiento (TOSEM, UNIPAZ)</span></div>
+                <div><span class="eyebrow block">Autor</span> <span class="text-brand-body">Marlon J. Gómez Argüello (recurso de autoría propia)</span></div>
+                <div><span class="eyebrow block">Repositorio</span> <a href="https://github.com/marlongomez9603-netizen/CMMS" target="_blank" class="text-brand-accent hover:underline">Repositorio del CMMS (GitHub)</a></div>
+                <div><span class="eyebrow block">Tecnología</span> <span class="text-brand-body">HTML5, JavaScript, Chart.js, Supabase · normas ISO 14224 / ISO 55000</span></div>
+
+                <div class="pt-4 border-t border-brand-line">
+                    <h4 class="font-display text-brand-ink font-semibold mb-2 mt-0">Descripción</h4>
+                    <p class="text-sm text-brand-body leading-relaxed">Aplicación web que reproduce el ciclo completo de la gestión del mantenimiento: registro de activos con jerarquía de ubicaciones ISO 14224, órdenes de trabajo (correctivo, preventivo, predictivo y mejora), planes preventivos, inventario de repuestos, personal técnico e indicadores en tiempo real (MTBF, MTTR, disponibilidad, cumplimiento PM). Incluye datos demo de tres sectores, un parcial evaluado y una encuesta de percepción.</p>
+                </div>
+            </div>
+
+            <div class="bg-brand-canvas/60 p-6 md:p-8 border-t md:border-t-0 md:border-l border-brand-line space-y-6">
+                <div>
+                    <h4 class="font-display text-brand-ink font-semibold mb-2 mt-0">Posibilidades de uso</h4>
+                    <p class="text-sm text-brand-body leading-relaxed">Permite el aprendizaje activo de la gestión del mantenimiento: los estudiantes administran activos reales simulados, ejecutan análisis causa-raíz (5 porqués) e interpretan KPIs, replicando situaciones del desempeño profesional sin riesgo ni costo industrial.</p>
+                </div>
+                <div>
+                    <h4 class="font-display text-brand-ink font-semibold mb-2 mt-0">Limitaciones</h4>
+                    <p class="text-sm text-brand-body leading-relaxed">No incorpora alternativas de accesibilidad para personas con discapacidad (sin conformidad WCAG explícita). Al ser de autoría propia, su evaluación debe complementarse con valoración de pares externos para mitigar el sesgo de complacencia.</p>
+                </div>
+                <div>
+                    <h4 class="font-display text-brand-ink font-semibold mb-2 mt-0">Verificación de estándares</h4>
+                    <p class="text-sm text-brand-body leading-relaxed">Basado en estándares web (HTML5) y en normas de la disciplina (ISO 14224 e ISO 55000). Responsive y desplegable en GitHub Pages sin instalación. Evaluado con el modelo COdA-IP: Índice 4,65 / 5,0 (Excelente).</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="p-6 border-t border-brand-line bg-brand-canvas/40 flex flex-wrap items-center gap-3">
+            <a href="{{ '/assets/docs/Evaluacion_COdA-IP_CMMS.docx' | relative_url }}" class="font-mono text-sm px-4 py-2 rounded-lg border border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-white transition-colors">Descargar evaluación COdA-IP del CMMS &darr;</a>
+            <a href="{{ '/aplicacion.html' | relative_url }}" class="font-mono text-sm px-4 py-2 rounded-lg border border-brand-line text-brand-body hover:border-brand-accent transition-colors">Ver resultados en Aplicación &rarr;</a>
         </div>
     </section>
 </div>
