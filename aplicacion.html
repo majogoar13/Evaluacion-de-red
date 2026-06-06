@@ -1,34 +1,190 @@
 ---
 layout: default
-title: Aplicación de Modelo
-subtitle: Evaluación de los RED seleccionados
+title: Aplicación del Modelo Rediseñado
+subtitle: Informe de implementación del modelo COdA-IP
 ---
 
-<div class="glass p-8 rounded-2xl border border-brand-accent">
-    <div class="flex items-center space-x-4 mb-4 text-brand-accent">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-        <p class="text-lg font-semibold m-0">Aviso: Esta página será desarrollada en el Entregable 2.</p>
+<div class="space-y-8">
+
+    <p class="text-brand-body leading-relaxed text-lg">
+        Esta presentación evidencia el <strong>informe de implementación</strong> del modelo de evaluación rediseñado <strong>COdA-IP</strong>, aplicado a los dos Recursos Educativos Digitales seleccionados, e incluye el análisis de resultados y las respuestas a los interrogantes planteados para el Entregable 2.
+    </p>
+
+    <!-- ====== PRESENTACIÓN ====== -->
+    <div class="card overflow-hidden" id="deck">
+        <!-- Barra superior -->
+        <div class="flex items-center justify-between px-5 py-3 border-b border-brand-line bg-brand-canvas/60">
+            <span class="font-mono text-xs text-brand-muted">Presentación · Informe de implementación</span>
+            <span class="font-mono text-xs text-brand-accent"><span id="slide-num">1</span> / <span id="slide-total">9</span></span>
+        </div>
+
+        <!-- Diapositivas -->
+        <div class="relative px-7 py-10 md:px-12 md:py-14 min-h-[440px]">
+
+            <!-- 1 Portada -->
+            <div class="slide active" data-slide="1">
+                <div class="flex items-center gap-3 mb-6"><span class="h-px w-10 bg-brand-ember"></span><span class="eyebrow">Entregable 2 · Implementación</span></div>
+                <h2 class="font-display text-3xl md:text-4xl font-semibold text-brand-ink mt-0 mb-4 border-none leading-tight">Informe de implementación del modelo COdA-IP</h2>
+                <p class="text-brand-body leading-relaxed max-w-2xl">Evaluación de la calidad de dos RED sobre la cadena de valor del gas natural mediante el modelo rediseñado, con dimensión de <strong>Fidelidad Disciplinar</strong>.</p>
+                <div class="mt-8 font-mono text-sm text-brand-muted">
+                    <p class="m-0">Marlon Joaquín Gómez Argüello</p>
+                    <p class="m-0">Procesos Industriales I · UDES</p>
+                </div>
+            </div>
+
+            <!-- 2 Contexto -->
+            <div class="slide" data-slide="2">
+                <span class="eyebrow">01 · Contexto y propósito</span>
+                <h2 class="font-display text-2xl md:text-3xl font-semibold text-brand-ink mt-2 mb-5 border-none">¿Qué se implementó y por qué?</h2>
+                <p class="text-brand-body leading-relaxed mb-4">Se aplicó el instrumento <strong>COdA-IP</strong> (11 criterios: 10 de COdA + Fidelidad Disciplinar) a los RED 1 y RED 2, con escala Likert 1–5 y ponderación 40 % didáctica / 35 % tecnológica / 25 % disciplinar.</p>
+                <div class="grid sm:grid-cols-2 gap-4 mt-6">
+                    <div class="border border-brand-line rounded-xl p-5 bg-brand-canvas/40"><span class="font-mono text-xs text-brand-accent">RED 1</span><p class="font-semibold text-brand-ink mt-1 mb-0">PhET · Propiedades de los gases</p></div>
+                    <div class="border border-brand-line rounded-xl p-5 bg-brand-canvas/40"><span class="font-mono text-xs text-brand-ember">RED 2</span><p class="font-semibold text-brand-ink mt-1 mb-0">PhET · Estados de la materia</p></div>
+                </div>
+            </div>
+
+            <!-- 3 RED1 resultados -->
+            <div class="slide" data-slide="3">
+                <span class="eyebrow">02 · Aplicación a RED 1</span>
+                <h2 class="font-display text-2xl md:text-3xl font-semibold text-brand-ink mt-2 mb-5 border-none">Resultados — Propiedades de los gases</h2>
+                <div class="grid md:grid-cols-3 gap-3 mb-5">
+                    <div class="border border-brand-line rounded-xl p-4 text-center bg-brand-canvas/40"><div class="font-display text-2xl font-semibold text-brand-accent">4.4</div><div class="text-xs text-brand-muted mt-1">Didáctica (40%)</div></div>
+                    <div class="border border-brand-line rounded-xl p-4 text-center bg-brand-canvas/40"><div class="font-display text-2xl font-semibold text-brand-accent">4.2</div><div class="text-xs text-brand-muted mt-1">Tecnológica (35%)</div></div>
+                    <div class="border-2 border-brand-ember/40 rounded-xl p-4 text-center bg-brand-ember/5"><div class="font-display text-2xl font-semibold text-brand-ember">3.0</div><div class="text-xs text-brand-muted mt-1">Fidelidad (25%)</div></div>
+                </div>
+                <div class="flex flex-wrap items-center gap-4 p-5 rounded-xl bg-brand-accent/5 border border-brand-accent/20">
+                    <div><div class="eyebrow">Índice de Calidad COdA-IP</div><div class="font-display text-4xl font-semibold text-brand-ink">3.98<span class="text-lg text-brand-muted"> / 5.0</span></div></div>
+                    <div class="font-mono text-sm px-3 py-1.5 rounded-full bg-brand-accent text-white">Nivel: Bueno · 80 %</div>
+                </div>
+                <p class="text-sm text-brand-body leading-relaxed mt-4">Excelente en interactividad, usabilidad y diseño. La <strong>Fidelidad Disciplinar (3.0)</strong> baja el índice: el modelo trata el gas como ideal y no contempla mezclas de hidrocarburos ni fugacidad.</p>
+            </div>
+
+            <!-- 4 RED2 resultados -->
+            <div class="slide" data-slide="4">
+                <span class="eyebrow">03 · Aplicación a RED 2</span>
+                <h2 class="font-display text-2xl md:text-3xl font-semibold text-brand-ink mt-2 mb-5 border-none">Resultados — Estados de la materia</h2>
+                <div class="grid md:grid-cols-3 gap-3 mb-5">
+                    <div class="border border-brand-line rounded-xl p-4 text-center bg-brand-canvas/40"><div class="font-display text-2xl font-semibold text-brand-accent">4.2</div><div class="text-xs text-brand-muted mt-1">Didáctica (40%)</div></div>
+                    <div class="border border-brand-line rounded-xl p-4 text-center bg-brand-canvas/40"><div class="font-display text-2xl font-semibold text-brand-accent">4.0</div><div class="text-xs text-brand-muted mt-1">Tecnológica (35%)</div></div>
+                    <div class="border-2 border-brand-ember/40 rounded-xl p-4 text-center bg-brand-ember/5"><div class="font-display text-2xl font-semibold text-brand-ember">3.0</div><div class="text-xs text-brand-muted mt-1">Fidelidad (25%)</div></div>
+                </div>
+                <div class="flex flex-wrap items-center gap-4 p-5 rounded-xl bg-brand-ember/5 border border-brand-ember/20">
+                    <div><div class="eyebrow" style="color:var(--ember,#d97534)">Índice de Calidad COdA-IP</div><div class="font-display text-4xl font-semibold text-brand-ink">3.83<span class="text-lg text-brand-muted"> / 5.0</span></div></div>
+                    <div class="font-mono text-sm px-3 py-1.5 rounded-full bg-brand-ember text-white">Nivel: Bueno · 77 %</div>
+                </div>
+                <p class="text-sm text-brand-body leading-relaxed mt-4">Sobresale en motivación y representación visual. De nuevo, la <strong>Fidelidad Disciplinar (3.0)</strong> es el techo: solo ofrece sustancias genéricas, no hidrocarburos pesados.</p>
+            </div>
+
+            <!-- 5 Comparativo -->
+            <div class="slide" data-slide="5">
+                <span class="eyebrow">04 · Análisis comparativo</span>
+                <h2 class="font-display text-2xl md:text-3xl font-semibold text-brand-ink mt-2 mb-6 border-none">RED 1 vs. RED 2</h2>
+                <div class="space-y-5">
+                    <div>
+                        <div class="flex justify-between text-sm mb-1"><span class="text-brand-body">RED 1 · Propiedades de los gases</span><span class="font-mono text-brand-accent">3.98</span></div>
+                        <div class="h-3 rounded-full bg-brand-line overflow-hidden"><div class="h-full bg-brand-accent rounded-full" style="width:79.6%"></div></div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-sm mb-1"><span class="text-brand-body">RED 2 · Estados de la materia</span><span class="font-mono text-brand-ember">3.83</span></div>
+                        <div class="h-3 rounded-full bg-brand-line overflow-hidden"><div class="h-full bg-brand-ember rounded-full" style="width:76.6%"></div></div>
+                    </div>
+                </div>
+                <p class="text-brand-body leading-relaxed mt-6">Ambos recursos se ubican en el nivel <strong>Bueno</strong>. La diferencia la marcan los criterios didácticos; en <strong>fidelidad disciplinar empatan en 3.0</strong>, lo que confirma que la simplificación física es una limitación estructural de los simuladores PhET y no un defecto de un recurso aislado. El modelo COdA-IP <strong>hace visible esa limitación</strong>, invisible para COdA, LORI o UNE.</p>
+            </div>
+
+            <!-- 6 Pregunta 1 -->
+            <div class="slide" data-slide="6">
+                <span class="eyebrow">05 · Interrogante 1</span>
+                <h2 class="font-display text-2xl md:text-3xl font-semibold text-brand-ink mt-2 mb-5 border-none">¿De qué manera permite una adecuada evaluación de un RED?</h2>
+                <p class="text-brand-body leading-relaxed mb-3">El modelo COdA-IP evalúa el RED de forma <strong>integral y contextualizada</strong>:</p>
+                <ul class="space-y-2 stagger-list">
+                    <li class="flex gap-3 text-brand-body"><span class="text-brand-ember font-mono">›</span><span>Cubre las tres facetas de la calidad: <strong>didáctica, tecnológica y disciplinar</strong>, evitando que un buen diseño "oculte" la imprecisión técnica.</span></li>
+                    <li class="flex gap-3 text-brand-body"><span class="text-brand-ember font-mono">›</span><span>La <strong>ponderación</strong> prioriza lo pedagógico y lo disciplinar (65 %), coherente con el propósito formativo en ingeniería.</span></li>
+                    <li class="flex gap-3 text-brand-body"><span class="text-brand-ember font-mono">›</span><span>El <strong>Índice de Calidad</strong> y su tabla de interpretación traducen la evaluación en una <strong>decisión de uso</strong> concreta.</span></li>
+                </ul>
+            </div>
+
+            <!-- 7 Pregunta 2 -->
+            <div class="slide" data-slide="7">
+                <span class="eyebrow">06 · Interrogante 2</span>
+                <h2 class="font-display text-2xl md:text-3xl font-semibold text-brand-ink mt-2 mb-5 border-none">¿Qué ventajas tiene frente a otros modelos del mercado?</h2>
+                <div class="grid sm:grid-cols-2 gap-4">
+                    <div class="border border-brand-line rounded-xl p-5 bg-brand-canvas/40"><h3 class="font-display text-base font-semibold text-brand-ink mt-0 mb-1">Especificidad disciplinar</h3><p class="text-sm text-brand-body m-0">Único que mide la exactitud físico-termodinámica; COdA, LORI y UNE la omiten.</p></div>
+                    <div class="border border-brand-line rounded-xl p-5 bg-brand-canvas/40"><h3 class="font-display text-base font-semibold text-brand-ink mt-0 mb-1">Agilidad</h3><p class="text-sm text-brand-body m-0">11 criterios frente a los 15 de UNE: aplicable en el día a día docente.</p></div>
+                    <div class="border border-brand-line rounded-xl p-5 bg-brand-canvas/40"><h3 class="font-display text-base font-semibold text-brand-ink mt-0 mb-1">Lenguaje docente</h3><p class="text-sm text-brand-body m-0">Hereda de COdA descriptores claros, sin requerir perfil técnico experto.</p></div>
+                    <div class="border border-brand-line rounded-xl p-5 bg-brand-canvas/40"><h3 class="font-display text-base font-semibold text-brand-ink mt-0 mb-1">Decisión accionable</h3><p class="text-sm text-brand-body m-0">Entrega un índice cuantitativo y una recomendación, no solo un puntaje.</p></div>
+                </div>
+            </div>
+
+            <!-- 8 Pregunta 3 -->
+            <div class="slide" data-slide="8">
+                <span class="eyebrow">07 · Interrogante 3</span>
+                <h2 class="font-display text-2xl md:text-3xl font-semibold text-brand-ink mt-2 mb-5 border-none">¿Qué elementos deben mejorarse en el modelo rediseñado?</h2>
+                <div class="space-y-4">
+                    <div class="flex gap-4"><span class="font-mono text-xs px-2 py-1 rounded bg-brand-accent/10 text-brand-accent h-fit">Técnico</span><p class="m-0 text-sm text-brand-body leading-relaxed">Definir una <strong>rúbrica detallada para la Fidelidad Disciplinar</strong> que reduzca la subjetividad del evaluador y exija un modelo físico de referencia explícito.</p></div>
+                    <div class="flex gap-4"><span class="font-mono text-xs px-2 py-1 rounded bg-brand-ember/10 text-brand-ember h-fit">Pedagógico</span><p class="m-0 text-sm text-brand-body leading-relaxed">Incluir un descriptor sobre <strong>alineación con las competencias del programa</strong>, no solo con los objetivos del recurso.</p></div>
+                    <div class="flex gap-4"><span class="font-mono text-xs px-2 py-1 rounded bg-brand-gas/10 text-brand-gas h-fit">Comunicacional</span><p class="m-0 text-sm text-brand-body leading-relaxed">Reforzar el criterio de <strong>accesibilidad</strong> (punto débil de ambos RED) con verificaciones inspiradas en la norma UNE 71362.</p></div>
+                </div>
+            </div>
+
+            <!-- 9 Conclusión -->
+            <div class="slide" data-slide="9">
+                <span class="eyebrow">08 · Cierre</span>
+                <h2 class="font-display text-2xl md:text-3xl font-semibold text-brand-ink mt-2 mb-5 border-none">Conclusión</h2>
+                <p class="text-brand-body leading-relaxed mb-4">La implementación demostró que COdA-IP <strong>discrimina con precisión</strong> la calidad de los RED y, sobre todo, <strong>hace visible la brecha de fidelidad disciplinar</strong> que los modelos tradicionales pasan por alto. Ambos simuladores son recomendables (nivel Bueno), pero deben usarse como <strong>anclaje conceptual con acompañamiento docente</strong>, no como herramienta de cálculo industrial.</p>
+                <div class="flex flex-wrap gap-3 mt-6">
+                    <a href="{{ '/rediseno.html' | relative_url }}" class="font-mono text-sm px-4 py-2 rounded-lg border border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-white transition-colors">Ver el modelo rediseñado &rarr;</a>
+                    <a href="{{ '/modelos-y-red/seleccionando-modelos.html' | relative_url }}" class="font-mono text-sm px-4 py-2 rounded-lg border border-brand-line text-brand-body hover:border-brand-accent transition-colors">Ver los 6 instrumentos &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controles -->
+        <div class="flex items-center justify-between px-5 py-4 border-t border-brand-line bg-brand-canvas/60">
+            <button id="prev" class="font-mono text-sm px-4 py-2 rounded-lg border border-brand-line text-brand-body hover:border-brand-accent hover:text-brand-accent transition-colors disabled:opacity-40 disabled:cursor-not-allowed">&larr; Anterior</button>
+            <div id="dots" class="flex gap-2"></div>
+            <button id="next" class="font-mono text-sm px-4 py-2 rounded-lg bg-brand-accent text-white hover:bg-brand-deep transition-colors disabled:opacity-40 disabled:cursor-not-allowed">Siguiente &rarr;</button>
+        </div>
     </div>
 </div>
 
-<div class="mt-8 space-y-8 opacity-60">
-    <section>
-        <h2 class="text-2xl font-bold text-slate-300 border-b border-slate-700 pb-2 mb-4">1. Aplicación del instrumento rediseñado al RED 1</h2>
-        <p class="text-slate-500">[Contenido en desarrollo]</p>
-    </section>
+<script>
+(function () {
+    const deck = document.getElementById('deck');
+    if (!deck) return;
+    const slides = Array.from(deck.querySelectorAll('.slide'));
+    const total = slides.length;
+    let idx = 0;
+    const numEl = document.getElementById('slide-num');
+    const totalEl = document.getElementById('slide-total');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    const dots = document.getElementById('dots');
+    totalEl.textContent = total;
 
-    <section>
-        <h2 class="text-2xl font-bold text-slate-300 border-b border-slate-700 pb-2 mb-4">2. Aplicación del instrumento rediseñado al RED 2</h2>
-        <p class="text-slate-500">[Contenido en desarrollo]</p>
-    </section>
+    slides.forEach((s, i) => {
+        const d = document.createElement('button');
+        d.className = 'w-2.5 h-2.5 rounded-full transition-colors';
+        d.addEventListener('click', () => go(i));
+        dots.appendChild(d);
+    });
+    const dotEls = Array.from(dots.children);
 
-    <section>
-        <h2 class="text-2xl font-bold text-slate-300 border-b border-slate-700 pb-2 mb-4">3. Análisis comparativo de resultados</h2>
-        <p class="text-slate-500">[Contenido en desarrollo]</p>
-    </section>
-
-    <section>
-        <h2 class="text-2xl font-bold text-slate-300 border-b border-slate-700 pb-2 mb-4">4. Pros y contras del rediseño</h2>
-        <p class="text-slate-500">[Contenido en desarrollo]</p>
-    </section>
-</div>
+    function go(n) {
+        idx = Math.max(0, Math.min(total - 1, n));
+        slides.forEach((s, i) => s.classList.toggle('active', i === idx));
+        numEl.textContent = idx + 1;
+        prev.disabled = idx === 0;
+        next.disabled = idx === total - 1;
+        dotEls.forEach((d, i) => d.style.backgroundColor = i === idx ? 'var(--accent)' : 'var(--line)');
+    }
+    prev.addEventListener('click', () => go(idx - 1));
+    next.addEventListener('click', () => go(idx + 1));
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') go(idx + 1);
+        if (e.key === 'ArrowLeft') go(idx - 1);
+    });
+    go(0);
+})();
+</script>

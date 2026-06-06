@@ -16,7 +16,7 @@ function initThreeJS() {
 
     // Particles representing gas molecules
     const particlesGeometry = new THREE.BufferGeometry();
-    const particlesCount = 800; // number of gas particles
+    const particlesCount = 360; // fewer particles: subtle, keeps text readable
     
     const posArray = new Float32Array(particlesCount * 3);
     const speedArray = new Float32Array(particlesCount);
@@ -35,11 +35,12 @@ function initThreeJS() {
     
     // Shader or simple points material with blue/cyan tint
     const particlesMaterial = new THREE.PointsMaterial({
-        size: 0.5,
-        color: 0x06b6d4, // Tailwind cyan
+        size: 0.45,
+        color: 0x0b6b73, // petrol teal, light theme
         transparent: true,
-        opacity: 0.6,
-        blending: THREE.AdditiveBlending
+        opacity: 0.18,    // very faint over the warm paper background
+        blending: THREE.NormalBlending,
+        depthWrite: false
     });
 
     const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
@@ -119,7 +120,7 @@ function initAnimations() {
     });
 
     // Anime.js to stagger list items if present
-    const listItems = document.querySelectorAll('.prose-brand ul li');
+    const listItems = document.querySelectorAll('.prose-brand .stagger-list li');
     if(listItems.length > 0) {
         anime({
             targets: listItems,

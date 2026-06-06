@@ -1,39 +1,198 @@
 ---
 layout: default
-title: Rediseño del Modelo
-subtitle: Propuesta de adaptación para Ingeniería de Producción
+title: Rediseño del Modelo de Evaluación
+subtitle: COdA-IP · Calidad de RED para Ingeniería de Producción
 ---
 
-<div class="glass p-8 rounded-2xl border border-brand-accent">
-    <div class="flex items-center space-x-4 mb-4 text-brand-accent">
-        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
-        <p class="text-lg font-semibold m-0">Aviso: Esta página será desarrollada en el Entregable 2.</p>
-    </div>
-</div>
+<div class="space-y-10">
 
-<div class="mt-8 space-y-8 opacity-60">
-    <section>
-        <h2 class="text-2xl font-bold text-slate-300 border-b border-slate-700 pb-2 mb-4">1. Punto de partida: modelo elegido para adaptar</h2>
-        <p class="text-slate-500">[Contenido en desarrollo]</p>
+    <!-- Título del modelo -->
+    <section class="card p-8 md:p-10 relative overflow-hidden">
+        <div class="absolute top-0 right-0 w-44 h-44 bg-brand-ember/5 rounded-full -mr-16 -mt-16 pointer-events-none"></div>
+        <span class="eyebrow">Título del modelo de evaluación</span>
+        <h2 class="font-display text-3xl font-semibold text-brand-ink mt-2 mb-3 border-none">COdA-IP — Calidad de Objetos de Aprendizaje para Ingeniería de Producción</h2>
+        <p class="text-brand-body leading-relaxed max-w-3xl">
+            Modelo de evaluación de la calidad de Recursos Educativos Digitales rediseñado a partir de la herramienta <strong>COdA</strong> (Fernández-Pampillón et al., 2012), al que se incorpora una dimensión disciplinar específica —<strong>Fidelidad Disciplinar</strong>— para valorar la exactitud técnica y termodinámica de los simuladores empleados en la enseñanza de la cadena de valor del gas natural en la asignatura Procesos Industriales I.
+        </p>
     </section>
 
-    <section>
-        <h2 class="text-2xl font-bold text-slate-300 border-b border-slate-700 pb-2 mb-4">2. Justificación del rediseño</h2>
-        <p class="text-slate-500">[Contenido en desarrollo]</p>
+    <!-- Referentes -->
+    <section class="card p-8 md:p-10">
+        <h2 class="font-display text-2xl font-semibold mb-6 text-brand-accent border-b border-brand-line pb-3">Referentes del rediseño</h2>
+        <p class="mb-6 text-brand-body leading-relaxed">El rediseño se sustenta en la triangulación de los tres modelos analizados y aplicados a los RED, tomando de cada uno su mayor fortaleza:</p>
+        <div class="grid md:grid-cols-3 gap-5">
+            <div class="border border-brand-line rounded-xl p-5 bg-brand-canvas/40">
+                <span class="font-mono text-xs text-brand-accent">Base estructural</span>
+                <h3 class="font-display text-lg font-semibold text-brand-ink mt-1 mb-2">COdA</h3>
+                <p class="text-sm text-brand-body leading-relaxed">Estructura de 10 criterios (5 didácticos + 5 tecnológicos) con descriptores guía y lenguaje cercano al docente. Es el esqueleto del modelo.</p>
+            </div>
+            <div class="border border-brand-line rounded-xl p-5 bg-brand-canvas/40">
+                <span class="font-mono text-xs text-brand-accent">Métrica de consenso</span>
+                <h3 class="font-display text-lg font-semibold text-brand-ink mt-1 mb-2">LORI</h3>
+                <p class="text-sm text-brand-body leading-relaxed">Aporta la lógica de la escala Likert 1–5 y la idea de valoración promediable entre evaluadores para reducir la subjetividad.</p>
+            </div>
+            <div class="border border-brand-line rounded-xl p-5 bg-brand-canvas/40">
+                <span class="font-mono text-xs text-brand-accent">Rigor y accesibilidad</span>
+                <h3 class="font-display text-lg font-semibold text-brand-ink mt-1 mb-2">UNE 71362</h3>
+                <p class="text-sm text-brand-body leading-relaxed">Inspira la inclusión explícita de la accesibilidad y la ponderación cuantitativa final, propia de una cultura normativa de ingeniería.</p>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2 class="text-2xl font-bold text-slate-300 border-b border-slate-700 pb-2 mb-4">3. Cambios propuestos al instrumento</h2>
-        <p class="text-slate-500">[Contenido en desarrollo]</p>
+    <!-- Problemática -->
+    <section class="card p-8 md:p-10">
+        <h2 class="font-display text-2xl font-semibold mb-6 text-brand-accent border-b border-brand-line pb-3">Problemática que motiva el rediseño</h2>
+        <p class="mb-4 text-brand-body leading-relaxed">
+            La aplicación de los modelos COdA, LORI y UNE 71362 a los dos RED reveló un <strong>vacío común</strong>: ninguno evalúa de forma específica la <strong>fidelidad disciplinar</strong> del recurso, es decir, qué tan correctamente representa los fenómenos físicos y termodinámicos propios de la Ingeniería de Producción. Un simulador puede obtener una calificación alta en usabilidad, diseño y motivación y, sin embargo, transmitir un modelo simplificado que induzca a error conceptual cuando el estudiante lo extrapola al comportamiento real de los hidrocarburos.
+        </p>
+        <p class="text-brand-body leading-relaxed">
+            En una asignatura como Procesos Industriales I, donde el RED es el puente entre la teoría y el cálculo industrial, esta omisión es crítica: se corre el riesgo de adoptar recursos pedagógicamente atractivos pero disciplinarmente imprecisos. El rediseño resulta relevante porque dota al docente de ingeniería de un criterio explícito para discriminar la exactitud técnica del recurso, sin renunciar a la facilidad de uso de COdA.
+        </p>
     </section>
 
-    <section>
-        <h2 class="text-2xl font-bold text-slate-300 border-b border-slate-700 pb-2 mb-4">4. Versión final del instrumento rediseñado</h2>
-        <p class="text-slate-500">[Contenido en desarrollo]</p>
+    <!-- Objetivos -->
+    <section class="card p-8 md:p-10">
+        <h2 class="font-display text-2xl font-semibold mb-6 text-brand-accent border-b border-brand-line pb-3">Objetivos del rediseño</h2>
+        <div class="space-y-4">
+            <div class="flex gap-4">
+                <span class="font-mono text-brand-ember text-sm shrink-0 pt-1">G</span>
+                <p class="text-brand-body leading-relaxed m-0"><strong>Objetivo general.</strong> Rediseñar el modelo COdA mediante la incorporación de una dimensión de Fidelidad Disciplinar, con el fin de evaluar la calidad de los RED empleados en la enseñanza de Procesos Industriales I atendiendo tanto a su valor pedagógico-tecnológico como a su exactitud técnica.</p>
+            </div>
+            <div class="flex gap-4">
+                <span class="font-mono text-brand-ember text-sm shrink-0 pt-1">01</span>
+                <p class="text-brand-body leading-relaxed m-0"><strong>Incorporar</strong> un criterio de fidelidad disciplinar al instrumento COdA, <em>mediante</em> descriptores específicos de exactitud termodinámica, <em>para</em> detectar simplificaciones que puedan inducir error conceptual.</p>
+            </div>
+            <div class="flex gap-4">
+                <span class="font-mono text-brand-ember text-sm shrink-0 pt-1">02</span>
+                <p class="text-brand-body leading-relaxed m-0"><strong>Definir</strong> una métrica ponderada de 11 criterios, <em>mediante</em> una escala Likert de 1 a 5, <em>para</em> obtener un índice de calidad comparable entre distintos RED.</p>
+            </div>
+            <div class="flex gap-4">
+                <span class="font-mono text-brand-ember text-sm shrink-0 pt-1">03</span>
+                <p class="text-brand-body leading-relaxed m-0"><strong>Validar</strong> el instrumento rediseñado, <em>mediante</em> su aplicación a los dos RED seleccionados, <em>para</em> verificar su pertinencia y capacidad de discriminación en el contexto de la Ingeniería de Producción.</p>
+            </div>
+        </div>
     </section>
 
-    <section>
-        <h2 class="text-2xl font-bold text-slate-300 border-b border-slate-700 pb-2 mb-4">5. Validación</h2>
-        <p class="text-slate-500">[Contenido en desarrollo]</p>
+    <!-- Criterios -->
+    <section class="card p-8 md:p-10">
+        <h2 class="font-display text-2xl font-semibold mb-6 text-brand-accent border-b border-brand-line pb-3">Criterios de evaluación</h2>
+        <p class="mb-6 text-brand-body leading-relaxed">El modelo COdA-IP conserva los 10 criterios originales de COdA y añade el criterio 11. Se organizan en tres bloques con la siguiente ponderación, que prioriza lo didáctico y lo disciplinar sobre lo estrictamente tecnológico:</p>
+        <div class="grid md:grid-cols-3 gap-5 mb-8">
+            <div class="border border-brand-line rounded-xl p-5 text-center bg-brand-canvas/40">
+                <div class="font-display text-3xl font-semibold text-brand-accent">40%</div>
+                <div class="eyebrow mt-1">Dimensión didáctica</div>
+                <p class="text-xs text-brand-muted mt-2">Criterios 1–5</p>
+            </div>
+            <div class="border border-brand-line rounded-xl p-5 text-center bg-brand-canvas/40">
+                <div class="font-display text-3xl font-semibold text-brand-accent">35%</div>
+                <div class="eyebrow mt-1">Dimensión tecnológica</div>
+                <p class="text-xs text-brand-muted mt-2">Criterios 6–10</p>
+            </div>
+            <div class="border-2 border-brand-ember/40 rounded-xl p-5 text-center bg-brand-ember/5">
+                <div class="font-display text-3xl font-semibold text-brand-ember">25%</div>
+                <div class="eyebrow mt-1" style="color:var(--ember,#d97534)">Fidelidad disciplinar</div>
+                <p class="text-xs text-brand-muted mt-2">Criterio 11 (nuevo)</p>
+            </div>
+        </div>
+
+        <div class="overflow-x-auto rounded-xl border border-brand-line">
+            <table class="w-full text-left">
+                <thead><tr><th>#</th><th>Criterio</th><th>Qué evalúa</th></tr></thead>
+                <tbody class="text-sm">
+                    <tr><td class="font-semibold text-brand-ink">1</td><td>Objetivos y coherencia didáctica</td><td>Claridad de los objetivos y su coherencia con contenidos y actividades.</td></tr>
+                    <tr><td class="font-semibold text-brand-ink">2</td><td>Calidad de los contenidos</td><td>Veracidad, actualidad y presentación equilibrada de la información.</td></tr>
+                    <tr><td class="font-semibold text-brand-ink">3</td><td>Capacidad de generar aprendizaje</td><td>Estímulo de la reflexión, el análisis crítico y la transferencia.</td></tr>
+                    <tr><td class="font-semibold text-brand-ink">4</td><td>Interactividad y adaptabilidad</td><td>Grado de manipulación de variables y ajuste a distintos ritmos.</td></tr>
+                    <tr><td class="font-semibold text-brand-ink">5</td><td>Motivación</td><td>Capacidad de despertar interés en el grupo concreto de estudiantes.</td></tr>
+                    <tr><td class="font-semibold text-brand-ink">6</td><td>Formato y diseño</td><td>Calidad estética y procesamiento adecuado de la información audiovisual.</td></tr>
+                    <tr><td class="font-semibold text-brand-ink">7</td><td>Usabilidad</td><td>Facilidad de navegación y claridad de la interfaz.</td></tr>
+                    <tr><td class="font-semibold text-brand-ink">8</td><td>Accesibilidad</td><td>Alternativas para discapacidad y adaptación a dispositivos.</td></tr>
+                    <tr><td class="font-semibold text-brand-ink">9</td><td>Reusabilidad</td><td>Aplicabilidad en distintos escenarios y perfiles de estudiante.</td></tr>
+                    <tr><td class="font-semibold text-brand-ink">10</td><td>Interoperabilidad</td><td>Cumplimiento de estándares y portabilidad entre plataformas.</td></tr>
+                    <tr style="background:var(--paper)"><td class="font-semibold" style="color:var(--ember,#d97534)">11</td><td class="font-semibold" style="color:var(--ember,#d97534)">Fidelidad disciplinar <span class="font-mono text-[10px] align-top">NUEVO</span></td><td>Exactitud físico-termodinámica del modelo simulado y ausencia de simplificaciones que induzcan error conceptual en ingeniería.</td></tr>
+                </tbody>
+            </table>
+        </div>
     </section>
+
+    <!-- Métrica / escala -->
+    <section class="card p-8 md:p-10">
+        <h2 class="font-display text-2xl font-semibold mb-6 text-brand-accent border-b border-brand-line pb-3">Métrica o escala de valoración</h2>
+        <p class="mb-6 text-brand-body leading-relaxed">
+            Cada criterio se valora con una <strong>escala Likert de 1 a 5</strong> (con opción "No aplica"), heredada de COdA y LORI por su equilibrio entre granularidad y facilidad de uso. El puntaje de cada bloque se promedia y se afecta por su peso; el <strong>Índice de Calidad COdA-IP</strong> resulta de la suma ponderada, expresado sobre 5,0 y como porcentaje.
+        </p>
+        <div class="grid sm:grid-cols-5 gap-3 mb-8">
+            <div class="border border-brand-line rounded-lg p-3 text-center bg-brand-canvas/40"><div class="font-display text-xl text-brand-ink font-semibold">1</div><div class="text-xs text-brand-muted mt-1">Muy deficiente</div></div>
+            <div class="border border-brand-line rounded-lg p-3 text-center bg-brand-canvas/40"><div class="font-display text-xl text-brand-ink font-semibold">2</div><div class="text-xs text-brand-muted mt-1">Deficiente</div></div>
+            <div class="border border-brand-line rounded-lg p-3 text-center bg-brand-canvas/40"><div class="font-display text-xl text-brand-ink font-semibold">3</div><div class="text-xs text-brand-muted mt-1">Aceptable</div></div>
+            <div class="border border-brand-line rounded-lg p-3 text-center bg-brand-canvas/40"><div class="font-display text-xl text-brand-ink font-semibold">4</div><div class="text-xs text-brand-muted mt-1">Bueno</div></div>
+            <div class="border border-brand-line rounded-lg p-3 text-center bg-brand-canvas/40"><div class="font-display text-xl text-brand-ink font-semibold">5</div><div class="text-xs text-brand-muted mt-1">Excelente</div></div>
+        </div>
+        <h3 class="font-display text-lg font-semibold text-brand-ink mb-3">Interpretación del Índice de Calidad COdA-IP</h3>
+        <div class="overflow-x-auto rounded-xl border border-brand-line">
+            <table class="w-full text-left">
+                <thead><tr><th>Rango</th><th>Nivel</th><th>Decisión sugerida</th></tr></thead>
+                <tbody class="text-sm">
+                    <tr><td class="font-mono">4.5 – 5.0</td><td class="font-semibold text-brand-ink">Excelente</td><td>Adoptar el RED sin reservas.</td></tr>
+                    <tr><td class="font-mono">3.5 – 4.4</td><td class="font-semibold text-brand-ink">Bueno</td><td>Adoptar con apoyo docente en los puntos débiles.</td></tr>
+                    <tr><td class="font-mono">2.5 – 3.4</td><td class="font-semibold text-brand-ink">Aceptable</td><td>Usar como complemento, nunca como recurso único.</td></tr>
+                    <tr><td class="font-mono">&lt; 2.5</td><td class="font-semibold text-brand-ink">Insuficiente</td><td>Descartar o reservar para introducción conceptual.</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- Metodología -->
+    <section class="card p-8 md:p-10">
+        <h2 class="font-display text-2xl font-semibold mb-6 text-brand-accent border-b border-brand-line pb-3">Metodología</h2>
+        <p class="mb-6 text-brand-body leading-relaxed">La aplicación del modelo COdA-IP sigue cuatro fases secuenciales, conservando el procedimiento de COdA y añadiendo la verificación disciplinar:</p>
+        <ol class="space-y-4 list-none p-0 m-0">
+            <li class="flex gap-4"><span class="font-mono text-brand-ember shrink-0">1</span><p class="m-0 text-brand-body leading-relaxed"><strong>Contextualización.</strong> Registrar la identificación del RED (área, nivel, objetivos) y el contexto de uso en la asignatura.</p></li>
+            <li class="flex gap-4"><span class="font-mono text-brand-ember shrink-0">2</span><p class="m-0 text-brand-body leading-relaxed"><strong>Exploración guiada.</strong> Interactuar con el recurso manipulando sus variables, simulando el uso real del estudiante.</p></li>
+            <li class="flex gap-4"><span class="font-mono text-brand-ember shrink-0">3</span><p class="m-0 text-brand-body leading-relaxed"><strong>Valoración por criterio.</strong> Asignar el puntaje 1–5 a cada uno de los 11 criterios usando los descriptores guía; la Fidelidad Disciplinar exige el contraste con el modelo físico de referencia.</p></li>
+            <li class="flex gap-4"><span class="font-mono text-brand-ember shrink-0">4</span><p class="m-0 text-brand-body leading-relaxed"><strong>Cálculo y decisión.</strong> Obtener el Índice de Calidad ponderado, ubicarlo en la tabla de interpretación y emitir la recomendación de uso.</p></li>
+        </ol>
+    </section>
+
+    <!-- Instrumento -->
+    <section class="card p-8 md:p-10">
+        <h2 class="font-display text-2xl font-semibold mb-3 text-brand-accent border-b border-brand-line pb-3">Instrumento de evaluación rediseñado</h2>
+        <p class="mb-6 text-brand-body leading-relaxed">Plantilla del instrumento COdA-IP lista para diligenciar. Marque con una <strong>X</strong> el nivel correspondiente en cada criterio.</p>
+        <div class="overflow-x-auto rounded-xl border border-brand-line">
+            <table class="w-full text-left">
+                <thead><tr><th>Criterio</th><th class="text-center">1</th><th class="text-center">2</th><th class="text-center">3</th><th class="text-center">4</th><th class="text-center">5</th><th class="text-center">N/A</th></tr></thead>
+                <tbody class="text-sm">
+                    <tr><td colspan="7" class="font-mono text-xs uppercase tracking-wider" style="background:#f1ede5;color:var(--ink,#16212b)">Dimensión didáctica · 40%</td></tr>
+                    <tr><td>1. Objetivos y coherencia didáctica</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>2. Calidad de los contenidos</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>3. Capacidad de generar aprendizaje</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>4. Interactividad y adaptabilidad</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>5. Motivación</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td colspan="7" class="font-mono text-xs uppercase tracking-wider" style="background:#f1ede5;color:var(--ink,#16212b)">Dimensión tecnológica · 35%</td></tr>
+                    <tr><td>6. Formato y diseño</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>7. Usabilidad</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>8. Accesibilidad</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>9. Reusabilidad</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td>10. Interoperabilidad</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                    <tr><td colspan="7" class="font-mono text-xs uppercase tracking-wider" style="background:#fbeee3;color:var(--ember,#d97534)">Fidelidad disciplinar · 25% (nuevo)</td></tr>
+                    <tr><td>11. Fidelidad disciplinar (exactitud físico-termodinámica)</td><td></td><td></td><td></td><td></td><td></td><td></td></tr>
+                </tbody>
+            </table>
+        </div>
+        <p class="text-sm text-brand-muted mt-4">El instrumento aplicado a los dos RED y el análisis de resultados se presentan en la página <a href="{{ '/aplicacion.html' | relative_url }}">Aplicación del modelo rediseñado</a>.</p>
+    </section>
+
+    <!-- Referencias -->
+    <section class="card p-8 md:p-10">
+        <h2 class="font-display text-2xl font-semibold mb-6 text-brand-accent border-b border-brand-line pb-3">Referencias bibliográficas</h2>
+        <div class="space-y-4 pl-8 -indent-8 text-brand-body leading-relaxed text-sm">
+            <p>Adame, S. (2015). <em>Instrumento para evaluar recursos educativos digitales, LORI-AD</em>. ResearchGate.</p>
+            <p>Asociación Española de Normalización [AENOR]. (2017). <em>UNE 71362:2017. Calidad de los materiales educativos digitales</em>. AENOR.</p>
+            <p>Fernández-Pampillón, A., Domínguez Romero, E. y De Armas Ranero, I. (2012). <em>Herramienta de evaluación de la calidad de objetos de aprendizaje (herramienta COdA)</em>. Universidad Complutense de Madrid.</p>
+            <p>Nesbit, J., Belfer, K. y Leacock, T. (2003). <em>Learning Object Review Instrument (LORI)</em>. E-Learning Research and Assessment Network.</p>
+            <p>Tabares, V., Duque, N. y Ovalle, D. (2017). Modelo por capas para evaluación de la calidad de objetos de aprendizaje en repositorios. <em>Revista Electrónica de Investigación Educativa</em>, <em>19</em>(3), 33–48.</p>
+        </div>
+        <p class="text-sm text-brand-muted mt-6">Consulta el listado completo en la página <a href="{{ '/referencias.html' | relative_url }}">Referencias</a>.</p>
+    </section>
+
 </div>

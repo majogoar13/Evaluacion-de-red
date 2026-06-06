@@ -1,0 +1,10 @@
+# Archivos multimedia pesados (el video se sirve embebido desde YouTube)
+*.mp4
+*.mov
+*.avi
+
+# Temporales de previsualización/local
+_preview/
+_shots/
+_site/
+.jekyll-cache/
